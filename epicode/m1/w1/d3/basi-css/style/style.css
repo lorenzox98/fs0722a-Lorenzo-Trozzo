@@ -1,0 +1,27 @@
+#prova1{
+    color: blueviolet; /* specificità= 100*/
+}
+.prova2{
+    color: blanchedalmond; /* specificità= 10*/
+}
+.background{
+    background-color: aqua;
+}
+div{
+    color: blue; /* specificita = 1*/
+}
+#menu li{
+    background-color: blueviolet;
+}
+#menu li>ul li{
+    background-color: rgb(147, 226, 43);
+}
+*{ /* specificità= 0*/
+    font-size: 2rem;
+}
+#p4{
+    font-size: 25px;
+}
+#p4 span{
+    font-size: 1em; /* em= grandezza elemento padre(25px)*/
+}
