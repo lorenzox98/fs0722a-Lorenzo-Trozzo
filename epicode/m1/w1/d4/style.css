@@ -20,6 +20,7 @@
     opacity: 50%;
 }
 #img{
+    width: 50%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +31,7 @@ div{
     display:flex;
     flex-direction: column;
     align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 #main{
@@ -50,4 +52,7 @@ h3{
 }
 footer{
     background-color: antiquewhite;
+}
+#img video{
+    width: 100%;
 }
