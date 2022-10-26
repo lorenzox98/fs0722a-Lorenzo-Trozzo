@@ -1,9 +1,9 @@
 #bar{
-    background-color: rgb(221, 253, 177);
+    background-color: rgb(180, 225, 146);
    
 }
 #descrizione{
-    background-color: rgb(183, 247, 247);
+    background-color: antiquewhite;
     width: 100%;
     
     border-top: solid 1px coral;
@@ -59,3 +59,11 @@ hr{
 }
 ul li{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.caption{
+    color: rgb(95, 96, 97);
+    opacity: 70%;
+}
