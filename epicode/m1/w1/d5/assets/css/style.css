@@ -49,9 +49,14 @@ header{
     display:flex;
     flex-direction: column;
     align-items: center;
+    
+}
+header img{
+   width: 80%;
 }
 header p{
     color: white;
+    text-align: center;
 }
 #head{
     margin: 1rem;
