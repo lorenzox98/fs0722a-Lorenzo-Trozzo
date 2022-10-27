@@ -1,0 +1,19 @@
+.quadrato{
+    
+    background-color: brown;
+}
+#q1,#q3,#q4{
+    width: 100px;
+    height: 100px;
+}
+#q2{
+    max-width: 150px;
+    max-height: 50px;
+}
+#q3{
+    overflow-y: auto;
+}
+#q4{
+    padding:15px;
+    box-sizing: border-box;
+}
