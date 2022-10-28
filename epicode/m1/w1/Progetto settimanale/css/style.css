@@ -31,7 +31,7 @@ img{
 hr{
     color: white;
 }
-h2:hover{
+h1:hover,h2:hover{
     color: #e22d0e;
 }
 
@@ -178,3 +178,6 @@ button{
     right: 35px;
     }
   }
+
+/*flipbox*/
+  
