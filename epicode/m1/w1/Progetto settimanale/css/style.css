@@ -1,0 +1,180 @@
+/* generale */
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+}
+p{
+    margin: 1.5rem;
+    
+}
+section{
+    margin: 1rem;
+}
+h1{
+    font-size: 2rem;
+}
+h2,h1{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #25a2c3;
+}
+img{
+    width: 30%;
+    border: solid 0.5px;
+
+}
+.bigImg{
+    width: 60%;
+}
+hr{
+    color: white;
+}
+h2:hover{
+    color: #e22d0e;
+}
+
+
+/*header*/
+#head{
+    background-image: url(../images/banner.jpg);
+    background-size:cover;
+    background-position: center ;
+    padding: 3rem;
+}
+.img{
+    padding: 1rem;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+button:hover{
+    background-color: rgb(32, 104, 162);
+}
+button{
+    margin: 1em;
+    padding: 0.5rem;
+    border-radius: 8%;
+    background-color: #f04c2f;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+#head h1{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+/*main*/
+
+.text{
+    margin-top: 1rem;
+    
+}
+.text h2{
+    font-weight: bold;
+    
+}
+.circular{
+    border-radius: 50%;
+    border: solid 0.5px;
+}
+#epicode{
+    color: white;
+    padding: 1rem;
+    background-color: #e22d0e;
+}
+#epicode h2 {
+    margin: 1rem;
+    color: white;
+    
+}
+.caption{
+    font-size: xx-small;
+}
+.contain{
+    padding:1.5rem;
+    border: solid 1px;
+    border-color: rgb(173, 173, 173);
+    margin: 1rem;
+}
+
+
+
+/*footer*/
+#foot{
+    color: white;
+    padding:1rem;
+    background-color: #25a2c3;
+    text-align: center;
+}
+#foot a{
+    display: block;
+    color: white;
+}
+#foot>p{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+/*css menu a tendina*/
+#men{
+    width: 20%;
+}
+#myNav{
+    text-align: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

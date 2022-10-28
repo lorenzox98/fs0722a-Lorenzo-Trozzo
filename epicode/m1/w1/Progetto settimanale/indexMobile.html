@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso Web Developer-Epicode School</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body><!--inizio Header-->
+    <header>
+        <!-- Primo Blocco Logo-->
+        <div class="img">
+            <img src="images/logo.png" alt="logo">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#ind" onclick="closeNav()">About</a> <!--chiudi menu quando clicchi-->
+                  <a href="#foot" onclick="closeNav()">Contact</a>
+                </div>
+            </div>
+            <p id="men" style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776; Menu</p> <!--apre menu-->
+        </div>
+        <div id="head"><!--secondo Blocco Img Sfondo-->
+            <h1>Corso Web <br> Developer</h1>
+            <p>Smetti di inseguire i titoli, inizia <br> a lavorare.
+            Mentre tutti vogliono <br> arricchire il CV, tu pensa <br>
+            ad arricchire le tue competenze <br></p>
+             <a href="https://epicode.com/"><button>PARTIAMO!</button></a>
+        </div> 
+    </header><!--fine Header-->
+    <main><!--Inizio main Section-->
+        <section>
+            <div class="text" id="ind"><!--Paragrafi con Immagini-->
+                <h2>Tutti ti cercheranno</h2>
+                <p>Sono 30.000 in Italia le posizioni <br>
+                di developer scoperte <br>, scegli quella che ti stimola di più</p>
+            </div>
+            <div class="text" >
+                <h2>Lavora dove vuoi</h2>
+                <p>Lavora da casa ,
+                in riva al mare <br>o in montagna</p>
+            </div>
+            <div class="immagine">
+                <img class="circular bigImg" src="images/notebook.jpg"/>
+            </div>
+            <div class="text">
+                <h2>Scegli il tuo ruolo</h2>
+                <p>Potrai scegliere se essere <br> 
+                azienda, freelancer o startup</p>
+            </div>
+            <div class="text">
+                <h2>Lavora in libertà</h2>
+                <p>Non serve lavorare in ufficio <br>
+                per creare contenuti digitali</p>
+            </div>
+        </section>
+        <section>
+            <div id="epicode">
+                <h2>Epicode Garantisce</h2>
+                <p>"tre mesi intensivi di corso che cambieranno <br>
+                per semmpre la tua vita"</p>
+                <p>Mario Rossi</p>
+                <p class="caption">CEO Epicode</p>
+            </div>
+        </section>
+        <section>
+            <div class="contain">
+                <div class="immagine">
+                    <img class="bigImg" src="images/foto1.jpg" alt="developer">
+                </div>
+                <div class="text">
+                    <h2>Il tuo PC</h2>
+                    <p>Se vuoi diventare Developer <br>
+                    E l'unico strumento di cui hai bisogno</p>
+                </div>
+            </div>
+            <div class="contain">
+                <div class="immagine">
+                    <img class="bigImg" src="images/foto2.jpg" alt="pc">
+                </div>
+                <div class="text">
+                    <h2>Impara ora</h2>
+                    <p>Impara da chi diventerai tra<br>
+                   qualche anno.</p>
+                </div>
+            </div>
+            <div class="contain"><div class="immagine">
+                <img class="bigImg" src="images/foto3.jpg" alt="pc"/>
+            </div>
+            <div class="text">
+                <h2>Lavora subito</h2>
+                <p>Sappiamo cosa vogliono le aziende <br>
+                perchè lavoriamo con loro</p>
+            </div></div>
+            
+        </section>
+    </main><!--Fine main-->
+    <footer><!--Footer-->
+        <div id="foot">
+            <p>Contattaci</p>
+            
+            <div >
+             <a href="tel:+3663977009"><i class="fas fa-phone-square-alt"></i>+39 3663977009</a>
+            <a href="mailto:lorist98@gmail.com"><i class="far fa-envelope"></i>lorist98@gmail.com</a>
+            <a href="https://www.google.it/maps/place/Via+Appia+Nuova,+1,+00182+Roma+RM/@41.8853618,12.5080563,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61eb2cdeae4d:0x761e6807ab66ea9e!8m2!3d41.8853618!4d12.510245"><i class="fas fa-map-marker"></i>Via Appia 1-00100 Roma(RM)</a>
+            <hr>
+                <p class="caption"><i class="far fa-copyright"></i>2021-immagini di Pixabay</p>
+            </div>   
+        </div>
+    </footer><!--Fine footer-->
+
+    <!-- Script menu a tendina-->
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+</body>
+</html>

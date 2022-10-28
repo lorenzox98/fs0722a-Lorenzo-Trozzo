@@ -1,5 +1,6 @@
 /* IMPOSTAZIONI GENERALI */
 body{
+    
     width: 100%;
     font-size: 100%;
     background-image: url(../img/sfondo.png);
@@ -7,16 +8,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:0%;
     
+}
+*{
+    font-family:serif;
+
 }
 h1{
     font-size:2.5rem;
     font-weight: bolder;
     margin:1rem;
+    
 }
 p{
     font-size: medium;
     margin: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 ul{
     display: block;
@@ -39,16 +47,19 @@ ol{
 strong{
     color: red;
     font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "ciao",;
 }
 
     
 /* HEADER */
 header{
+    
     width: 50%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     
 }
 header img{
@@ -80,6 +91,8 @@ main{
     align-items: center;
     text-align: center;
 }
+
+/* ELEMENTI NEL MAIN - ARTICLE */
 section{
     background-color: white;
     display:flex;
@@ -106,7 +119,6 @@ section{
     align-items: left;
     text-align: left;
 }
-/* ELEMENTI NEL MAIN - ARTICLE */
 iframe{
     border-radius: 10%;
 }
@@ -157,4 +169,10 @@ footer{
     align-items: center;
     text-align: center;
     background-color: rgb(112, 112, 174);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
+@font-face {
+    font-family: "ciao";
+    src: url(../webfonts/fa-brands-400.svg) format("truetype");
+    }
