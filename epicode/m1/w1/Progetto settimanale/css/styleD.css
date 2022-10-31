@@ -44,7 +44,9 @@ h1:hover,h2:hover{
     color: #e22d0e;
 }
 
-
+.h1colored {
+    cursor: pointer;
+  }
 
 
 /*header*/

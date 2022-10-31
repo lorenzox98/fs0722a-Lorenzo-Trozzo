@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <img src="logo.png" alt="logo">
+        </div>
+    </header>
+   <main>
+
+    <table>
+        <form method="post" name="modulo">
+        <tr>
+        <td colspan="2" style="text-align: center;" ><b>Registrati ad Epicode!<br>Tutti i campi sono obbligatori</b></td>
+        </tr>
+        <tr><td><b>Nome</b></td><td><input type="text" name="nome"></td></tr>
+        <tr><td><b>Cognome</b></td><td><input type="text" name="cognome"></td></tr>
+        <tr><td><b>Nickname</b></td><td><input type="text" name="nickname"></td></tr>
+        <tr><td><b>Password</b></td><td><input type="password" name="password"></td></tr>
+        <tr><td><b>Conferma password</b></td><td><input type="password" name="conferma"></td></tr>
+        <tr><td><b>Data di nascita (es: 12/04/1978)</b></td><td><input type="text" name="nascita"></td></tr>
+        <tr><td><b>Città</b></td><td>
+        <select name="citta">
+        <option>- Seleziona la tua città -</option>
+        <option value="Roma">Roma</option>
+        <option value="Milano">Milano</option>
+        <option value="Napoli">Napoli</option>
+        <option value="Firenze">Firenze</option>
+        <option value="Bologna">Bologna</option>
+        </select>
+        </td>
+        </tr>
+        <tr><td><b>Indirizzo</b></td><td><input type="text" name="indirizzo"></td></tr>
+        <tr><td><b>Telefono (senza spazi nè simboli)</b></td><td><input type="text" name="telefono"></td></tr>      
+        <tr><td colspan="2" style="text-align:right"><input id="button" type="button" value="Invia" onClick="Modulo()"></td></tr>
+        </form>
+        </table>
+   </main>
+   <script src="script/index.js"></script>
+</body>
+</html>
