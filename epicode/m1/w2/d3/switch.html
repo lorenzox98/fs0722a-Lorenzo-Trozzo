@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select  id="frutti" onchange="mostraPrezzo()">
+        <option value="">--</option>
+        <option value="mele">mele</option>
+        <option value="banane">banane</option>
+        <option value="ananas">ananas</option>
+        <option value="ciliegie">ciliegie</option>
+    </select>
+    <div id="testo"> </div>
+
+    <script>
+
+        function mostraPrezzo(){
+            var messaggio;
+            let frutta=document.getElementById("frutti").value;
+            switch(frutta)
+        {
+            case "mele":
+                 messaggio="le "+frutta+"costano 0.5";
+                 break;
+            case "banane":
+                 messaggio="le "+frutta+"costano 0.5";
+                 break;
+            case "ananas":
+                 messaggio="le "+frutta+"costano 0.5";
+                 break;
+            case "ciliegie":
+                 messaggio="le "+frutta+"costano 0.5";
+                 break;
+        }
+        document.getElementById("testo").innerHTML=messaggio;
+        }
+        
+        
+    </script>
+</body>
+</html>
