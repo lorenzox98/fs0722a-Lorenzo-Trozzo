@@ -1,0 +1,47 @@
+.contenitore {
+ 
+    background-color: rgb(201, 201, 201);
+    padding: 10px;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid black;
+    
+    
+}
+main{
+    text-align: center;
+    display: flex;
+    margin-top:200px;
+    margin-bottom:200px;
+    justify-content: center;
+}
+button {
+    padding: 10px;
+    width: 87px;
+    height: 60px;
+    margin-top: 10px;
+    background-color: rgb(194, 194, 194);
+    color: black;
+    font-size: 20px;
+    border-color: rgb(114, 41, 41);
+}
+button:hover{
+    opacity: 40%;
+}
+#numeri{
+    border: solid 2px grey;
+    border-radius: 8%;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    width: 80%;
+    height: 60px;
+   text-align: right;
+    
+}
+.operatore{
+    
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

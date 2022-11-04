@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Clacolatrice</title>
+</head>
+<body>
+    <main>
+        <div class="contenitore"> 
+            <input type="text" id="numeri" placeholder="0"> <!--Display Calcolatrice-->
+            <div class="firstRow">
+                <button class="operatore" data="" onclick="pulisci(this)">C</button>
+                <button class="operatore" data="/" onclick="aggCifra(this)">/</button>  <!--Prima Riga-->
+                <button class="operatore" data="" onclick="radice(this)">R</button>
+                
+            </div>
+            <div class="secondRaw">
+                <button data="7" onclick="aggCifra(this)">7</button>
+                <button data="8" onclick="aggCifra(this)">8</button>       <!--Seconda riga-->
+                <button data="9" onclick="aggCifra(this)">9</button>
+                <button class="operatore" data="*" onclick="aggCifra(this)">X</button>
+    
+            </div>
+            <div class="thirdRaw">
+                <button data="4" onclick="aggCifra(this)">4</button>
+                <button data="5" onclick="aggCifra(this)">5</button>    <!--Terza riga-->
+                <button data="6" onclick="aggCifra(this)">6</button>
+                <button class="operatore" data="-" onclick="aggCifra(this)">-</button>
+    
+            </div>
+            <div class="fourthRaw">
+                <button data="1" onclick="aggCifra(this)">1</button>
+                <button data="2" onclick="aggCifra(this)">2</button>    <!--quarta riga-->
+                <button data="3" onclick="aggCifra(this)">3</button>
+                <button class="operatore"data="+" onclick="aggCifra(this)">+</button>
+            </div>
+            <div class="fifthraw">
+                <button data="0" onclick="aggCifra(this)">0</button>
+                <button data="." onclick="aggCifra(this)">.</button>    <!--Quinta riga-->
+                <button class="operatore" data="=" onclick="tot(this)">=</button>
+                <button class="operatore" data="" onclick="cancella(this)"><=</button>
+            </div>
+            <div class="sixraw"><!--Sesta riga-->
+                <button class="operatore" data="" onclick="logaritmo(this)">Log</button>
+                <button class="operatore" data="" onclick="tg(this)">tg</button>
+                <button class="operatore" data="" onclick="cos(this)">cos</button>
+                <button class="operatore" data="" onclick="sin(this)">sin</button>
+            </div>
+        </div>
+    </main>
+   
+    <script src="js/script.js">  
+    </script>
+</body>
+</html>

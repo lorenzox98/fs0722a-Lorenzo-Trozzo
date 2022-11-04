@@ -153,28 +153,26 @@ Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO",
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
   */
-  var j=0;
   for(let personaggio of starWarsCharacters)
   {
     switch(personaggio.eye_color)
     {
       case "blue":
-        eyeColor.blue[j]=personaggio;
+        eyeColor.blue.push(personaggio);
         break;
       case "yellow":
-        eyeColor.yellow[j]=personaggio;
+        eyeColor.yellow.push(personaggio);
         break;
       case "brown":
-        eyeColor.brown[j]=personaggio;
+        eyeColor.brown.push(personaggio);
         break;
       case "red":
-        eyeColor.red[j]=personaggio;
+        eyeColor.red.push(personaggio);
         break;
       case "blueGrey":
-        eyeColor.blueGrey[j]=personaggio;
+        eyeColor.blueGrey(personaggio);
         break;
     }
-    j++;
   }
   console.log(eyeColor.yellow);
 
