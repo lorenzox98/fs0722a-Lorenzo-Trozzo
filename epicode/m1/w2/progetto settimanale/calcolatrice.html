@@ -15,6 +15,8 @@
                 <button class="operatore" data="" onclick="pulisci(this)">C</button>
                 <button class="operatore" data="/" onclick="aggCifra(this)">/</button>  <!--Prima Riga-->
                 <button class="operatore" data="" onclick="radice(this)">R</button>
+                <button class="operatore" data="" onclick="binario(this)">B</button>
+
                 
             </div>
             <div class="secondRaw">
@@ -40,14 +42,17 @@
             <div class="fifthraw">
                 <button data="0" onclick="aggCifra(this)">0</button>
                 <button data="." onclick="aggCifra(this)">.</button>    <!--Quinta riga-->
-                <button class="operatore" data="=" onclick="tot(this)">=</button>
                 <button class="operatore" data="" onclick="cancella(this)"><=</button>
+                <button class="operatore" data="" onclick="logaritmo(this)">Log</button>
             </div>
             <div class="sixraw"><!--Sesta riga-->
-                <button class="operatore" data="" onclick="logaritmo(this)">Log</button>
-                <button class="operatore" data="" onclick="tg(this)">tg</button>
-                <button class="operatore" data="" onclick="cos(this)">cos</button>
-                <button class="operatore" data="" onclick="sin(this)">sin</button>
+                <button class="operatore" data="" onclick="tg(this)">Tg</button>
+                <button class="operatore" data="" onclick="cos(this)">Cos</button>
+                <button class="operatore" data="" onclick="sin(this)">Sin</button>
+                <button id="null" class="operatore" data="">a</button>
+            </div>
+            <div>
+                <button id="uguale" class="operatore" data="" onclick="tot(this)">=</button>
             </div>
         </div>
     </main>

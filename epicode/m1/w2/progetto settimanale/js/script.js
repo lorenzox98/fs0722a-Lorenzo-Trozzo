@@ -43,3 +43,7 @@ function tot() //calcola il totale con la funzione eval che converte la stringa 
     let numeri=document.getElementById("numeri");
     numeri.value=eval(numeri.value);
 }
+function binario() 
+{   
+    document.getElementById("numeri").value=Number(document.getElementById("numeri").value).toString(2);
+}   
