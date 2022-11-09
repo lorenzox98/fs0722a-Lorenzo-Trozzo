@@ -1,0 +1,125 @@
+
+  #contenitore{ /*contenitore lista*/
+    border: solid 3px rgb(255, 161, 161);
+    margin-top: 7%;
+    margin-left:34%;
+    width: 30%;
+    margin-bottom: 20%;
+  }
+    /* Style header */
+    .header {
+        background-color: #688ffa;
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 4rem;
+      }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+   /* Style input text */
+   input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Style bottone add*/
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8%;
+    
+  }
+  
+  .addBtn:hover { /*passando sul pulsante add*/
+    background-color: #bbb;
+  }
+  
+  /*tolgo i margini dalla lista*/
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style elementi lista*/
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* alternare il colore dei li */
+  ul li:nth-child(odd) {
+    background: #bbccfa;
+  }
+  
+  /* colore passando sul li */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* cliccando il li aggiunge una sbarra e cambia il coclore */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* aggiunge una spunta quando si clicca sul li */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /*bottone chiudi */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  /*passando sul bottone close*/
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+
+  
+  
+
+  
+ 
+  
