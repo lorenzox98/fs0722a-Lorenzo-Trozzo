@@ -9,6 +9,8 @@
    }
  }, false);
  
+
+ 
  // crea un nuovo elemento della lista premendo add
  function newElement() {
    var li = document.createElement("li"); //creo un elemento del dom con un li
@@ -20,6 +22,9 @@
    } else {
      document.getElementById("myUL").appendChild(li); //se il campo pasasto è diverso da null lo aggungo alla lista
    }
+
+
+
    //ripristino vuoto il campo di inserimento
    document.getElementById("myInput").value = "";
    var span = document.createElement("SPAN");
@@ -34,7 +39,10 @@
        div.style.display = "none";
      }
    }
- }
+ } 
+
+
+
  //elimina li
  var close = document.getElementsByClassName("close");
  var i;
