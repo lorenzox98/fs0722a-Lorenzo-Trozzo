@@ -130,7 +130,7 @@ const movies = [
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
 let sum=10+20        //creo una variabile somma e gli assegno la somma di 20 e 10
-console.log("Esercizio 1:");
+console.log("Esercizio A:");
 console.log("la somma è "+sum);   //mostro in console la variabile sum
 console.log("//////////////////////////////////////////////////////");
 
@@ -138,7 +138,7 @@ console.log("//////////////////////////////////////////////////////");
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
 let random=Math.floor(Math.random()*21); //assegno alla variabile random il valore generato e restituito dal metodo Math, ovvero un intero casuale da 0-20
-console.log("Esercizio 2:");
+console.log("Esercizio B:");
 console.log("il numero creato casualmente è "+random); //mostro in console la variabile random
 console.log("//////////////////////////////////////////////////////");
 
@@ -150,7 +150,7 @@ let me={  //creo un oggetto chiamato "me", con le seguenti proprietà
   surname:"Trozzo",
   age:24
 }
-console.log("Esercizio 3");
+console.log("Esercizio C");
 console.log("Ciao a tutti sono "+me.nome+" "+me.surname+" ed ho "+me.age+" anni"); //stampo i miei dati usando un interpolazione di stringhe
 console.log("//////////////////////////////////////////////////////");
 
@@ -160,7 +160,7 @@ console.log("//////////////////////////////////////////////////////");
 function removeField()
 {
   delete me.age;
-  console.log("Esercizio 4");
+  console.log("Esercizio D");
   console.log("Campo age eliminato");
   console.log(me);
 }
@@ -171,7 +171,7 @@ console.log("//////////////////////////////////////////////////////");
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
 me.skills=["java","javascript"];
-console.log("Esercizio 5");
+console.log("Esercizio E");
 console.log(me);
 console.log("//////////////////////////////////////////////////////");
 
@@ -179,7 +179,7 @@ console.log("//////////////////////////////////////////////////////");
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 me.skills.push("Css");
-console.log("Esercizio 6");
+console.log("Esercizio F");
 console.log(me);
 console.log("//////////////////////////////////////////////////////");
 
@@ -187,7 +187,7 @@ console.log("//////////////////////////////////////////////////////");
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
 me.skills.pop();
-console.log("Esercizio 7");
+console.log("Esercizio G");
 console.log(me);
 console.log("//////////////////////////////////////////////////////");
 
@@ -206,7 +206,7 @@ function dice(){
   console.log(rand);
   return rand;
 }
-console.log("Esercizio 8");
+console.log("Esercizio 1");
 dice();
 console.log("//////////////////////////////////////////////////////");
 
@@ -220,7 +220,7 @@ function whiIsBigger(a,b){
   return b;
 }
 let a=whiIsBigger(12,14);
-console.log("Esercizio 9");
+console.log("Esercizio 2");
 console.log(a);
 console.log("//////////////////////////////////////////////////////");
 
@@ -231,7 +231,7 @@ console.log("//////////////////////////////////////////////////////");
 */
 function splitMe(stringa){
   let arr=stringa.split(" ");
-  console.log("Esercizio 10");
+  console.log("Esercizio 3");
   console.log(arr);
 }
 splitMe("ciao sto programmando js");
@@ -248,7 +248,7 @@ function deleteOne(string,bool)
   else  
     return string.slice(0,-1);
 }
-console.log("Esercizio 11");
+console.log("Esercizio 4");
 console.log("Senza l'ultimo carattere:");
 let stringa=deleteOne("javascript",false);
 console.log(stringa);
@@ -265,7 +265,7 @@ function onlyLetters(stringa)
 {
   return stringa.replace(/\d/g, "");
 }
-console.log("Esercizio 12");
+console.log("Esercizio 5");
 let b=onlyLetters("ciao a tutt5i");
 console.log(b);
 console.log("//////////////////////////////////////////////////////");
@@ -284,7 +284,7 @@ function isThisAnEmail(str){
     return false;
 }
 }
-console.log("Esercizio 13");
+console.log("Esercizio 6");
 let booleano=isThisAnEmail("lorist98@gmail.com");
 console.log(booleano);
 console.log("//////////////////////////////////////////////////////");
@@ -300,7 +300,7 @@ function whatDayIsIt()
   let day=arr[i];
   console.log(day);
 }
-console.log("Esercizio 14");
+console.log("Esercizio 7");
 whatDayIsIt();
 console.log("//////////////////////////////////////////////////////");
 /* ESERCIZIO 8
@@ -327,7 +327,7 @@ function rollTheDices(n)
   }
   return somma;
 }
-console.log("Esercizio 15");
+console.log("Esercizio 8");
 let somma=rollTheDices(4);
 console.log(somma);
 console.log("////////////////////////////////////////////////////////////")
@@ -342,7 +342,7 @@ function howManyDays(date){
 }
 let date1=new Date("1998/07/05")
 let day=howManyDays(date1);
-console.log("Esercizio 16");
+console.log("Esercizio 9");
 console.log(day);
 console.log("////////////////////////////////////////////////////////////")
 /* ESERCIZIO 10
@@ -358,7 +358,7 @@ function isTodayMyBirthday()
     return false;
   }
 }
-console.log("Esercizio 17");
+console.log("Esercizio 10");
 console.log(isTodayMyBirthday());
 console.log("////////////////////////////////////////////////////////////")
 
@@ -391,7 +391,7 @@ function newestMovie(movies)
   }
   return movies[indice];
 }
-console.log("Esercizio 19");
+console.log("Esercizio 12");
 console.log("Il film piu recente è: ");
 console.log(newestMovie(movies));
 console.log("////////////////////////////////////////////////////////////")
@@ -403,7 +403,7 @@ function countMovies(movies)
 {
   return movies.length;
 }
-console.log("Esercizio 20");
+console.log("Esercizio 13");
 console.log("Il numero di film è: ");
 console.log(countMovies(movies));
 console.log("////////////////////////////////////////////////////////////")
@@ -422,7 +422,7 @@ function onlyTheYears(movies)
   }
   return arr;
 }
-console.log("Esercizio 21");
+console.log("Esercizio 14");
 console.log("Array con gli anni: ");
 console.log(onlyTheYears(movies));
 console.log("////////////////////////////////////////////////////////////")
@@ -436,7 +436,7 @@ function onlyInLastMillennium(movies)
   })
   return risultato;
 }
-console.log("Esercizio 22");
+console.log("Esercizio 15");
 console.log("Array con gli anno minore di 2000: ");
 console.log(onlyInLastMillennium(movies));
 console.log("////////////////////////////////////////////////////////////")
@@ -452,7 +452,7 @@ function sumAllTheYears(movies)
   }
   return sum;
 }
-console.log("Esercizio 23");
+console.log("Esercizio 16");
 console.log("La somma degli anni è: ");
 console.log(sumAllTheYears(movies));
 console.log("////////////////////////////////////////////////////////////");
@@ -467,7 +467,7 @@ function searchByTitle(string,movies)
   return risultato;
 }
 
-console.log("Esercizio 24");
+console.log("Esercizio 17");
 console.log("i film che contengono la stringa sono:: ");
 console.log(searchByTitle("the",movies));
 console.log("////////////////////////////////////////////////////////////");
@@ -483,7 +483,7 @@ function deleteProp(prop,obj)
    delete obj[prop];
    return obj;
 }
-console.log("Esercizio 18");
+console.log("Esercizio 11");
 console.log(deleteProp("Title",movies[0]));
 console.log("////////////////////////////////////////////////////////////")
 /* ESERCIZIO 18
@@ -510,7 +510,7 @@ function searchAndDivide(string,movies)
     }
   return obj;
 }
-console.log("Esercizio 19");
+console.log("Esercizio 18");
 searchAndDivide("the",movies);
 console.log("////////////////////////////////////////////////////////////")
 
@@ -522,7 +522,7 @@ function removeIndex(index,movies)
    movies.splice(index,1);
    return movies;
 }
-console.log("Esercizio 26");
+console.log("Esercizio 19");
 console.log(removeIndex(0,movies));
 console.log("////////////////////////////////////////////////////////////");
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
@@ -534,7 +534,7 @@ function setContainer()
 {
   let cont=document.getElementById("container")
 }
-console.log("Esercizio 27");
+console.log("Esercizio 20");
 console.log("////////////////////////////////////////////////////////////");
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
@@ -543,7 +543,7 @@ function selAll()
 {
   let td=document.querySelectorAll("td");
 }
-console.log("Esercizio 28");
+console.log("Esercizio 21");
 console.log("////////////////////////////////////////////////////////////");
 
 
