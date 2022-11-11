@@ -120,7 +120,7 @@
 
       const addParagraph = function (content) {
         //
-        let list=document.querySelectorAll("div");
+        let list=document.querySelectorAll("div p");
         let par=document.createElement("p");
         par.innerText=content;
         list[0].appendChild(par);
@@ -184,7 +184,7 @@
       */
 
       const inputField = document.getElementById('input-field')
-      inputField.addEventListener("keypress",()=>{
+      inputField.addEventListener("input",()=>{
         console.log(inputField.value);
       })
       // ...
@@ -195,9 +195,9 @@
 
       window.onload = function () {
         //
-        window.addEventListener("load", function(){  alert("pagina caricata") })
+       alert("pagina caricata");
       }
-      window.onload();
+      
     </script>
   </body>
 </html>
