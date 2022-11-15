@@ -1,3 +1,6 @@
+
+let a=localStorage.getItem("risposteG");
+console.log(a)
 var ref=document.querySelector("#ref");
 var check=document.querySelector("#check");
 var button=document.querySelector("a");
