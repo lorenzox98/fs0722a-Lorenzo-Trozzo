@@ -1,12 +1,13 @@
+let lunghezza=localStorage.getItem("length");
 let giuste=localStorage.getItem("risposteG");
-let sbagliate=10-giuste;
-let percSbagliate=(sbagliate/10)*100
-let percGiuste=(giuste/10)*100
+let sbagliate=lunghezza-giuste;
+let percSbagliate=((sbagliate/lunghezza)*100).toFixed(2)
+let percGiuste=((giuste/lunghezza)*100).toFixed(2)
 let correct=document.querySelectorAll(".result")
 console.log(correct)
 
 let count=document.createElement("p");
-count.innerText=giuste+"/10 Questions right";
+count.innerText=giuste+"/"+lunghezza+ "Questions right";
 count.style.textAlign="left";
 count.className="testi";
 let percent=document.createElement("p");
@@ -18,7 +19,7 @@ correct[0].appendChild(count);
 
 
 let countW=document.createElement("p");
-countW.innerText=sbagliate+"/10 Questions wrong";
+countW.innerText=sbagliate+"/"+lunghezza+ "Questions wrong";
 countW.style.textAlign="right";
 countW.className="testi";
 let percentW=document.createElement("p");

@@ -74,7 +74,7 @@ const questions = [
   {
     category: "Science: Computers",
     type: "multiple",
-    difficulty: "easy",
+    difficulty: "medium",
     question: "On Twitter, what is the character limit for a Tweet?",
     correct_answer: "140",
     incorrect_answers: ["120", "160", "100"],
@@ -98,12 +98,19 @@ const questions = [
   },
 ];
 
-//Array di domande
+
+//prendo dalla memoria d'ambiente la stringa con la difficoltà scelta su index
+let b=localStorage.getItem("difficult");
 
 
+//Array
+const filtred=questions.filter(domanda =>{
+  return domanda.difficulty==b
+});
 
 
-mescola(questions);
+//mescolo l'array di domande
+mescola(filtred);
 
 
 
@@ -134,7 +141,7 @@ function update(percent){
       update(count);
     
     if(count==0){ //se il timer scade
-      if(i==questions.length) //se siamo all ultima domanda
+      if(i==filtred.length) //se siamo all ultima domanda
       {
         salva(); //salvo in memoria in muero di risposte giuste
         window.location.href="risultati.html"//mi sposto alla pagina successiva
@@ -146,9 +153,9 @@ function update(percent){
 
       //Eliminazione domanda attuale e allocazione della successiva
       deleteQuestion();
-      nextQuestion(questions,i-1);
-      counterQuest(questions,i);
-      nextAnswer(questions,i-1);
+      nextQuestion(filtred,i-1);
+      counterQuest(filtred,i);
+      nextAnswer(filtred,i-1);
       update(count);//Riparte il timer
       }
       
@@ -157,9 +164,9 @@ function update(percent){
 //Fine script timer
 
 //Istruzioni necessarie a visualizzare la prima domanda
-nextQuestion(questions,i-1);
-nextAnswer(questions,i-1);
-counterQuest(questions,i);
+nextQuestion(filtred,i-1);
+nextAnswer(filtred,i-1);
+counterQuest(filtred,i);
 
 
   //Prende tutti i bottoni che ci sono attualmente nella pagina e gli aggiunge un eventListner per passare all domanda successiva
@@ -167,7 +174,7 @@ counterQuest(questions,i);
   {
     
     let array=document.querySelectorAll("button")
-    if(i!=questions.length)
+    if(i!=filtred.length)
     {
       for(let bottone of array)
       {
@@ -175,14 +182,14 @@ counterQuest(questions,i);
           i++;
           count=20;
           deleteQuestion();
-          nextQuestion(questions,i-1);
-          counterQuest(questions,i);
-          nextAnswer(questions,i-1);
+          nextQuestion(filtred,i-1);
+          counterQuest(filtred,i);
+          nextAnswer(filtred,i-1);
           update(count)
   
         })
       }
-    }else
+    }else//se è l'ultimo href alla pagina risultati
     {
       for(let bottone of array)
       {
@@ -314,5 +321,6 @@ var myMusic = document.querySelector("#music");
 	myMusic.volume = 0;
 
   
-  let b=localStorage.getItem("difficult");
-  console.log("difficolta",b)
+
+  //setto quante domande ci sono nell array in memoria d'ambiente
+  localStorage.setItem("length",filtred.length)
