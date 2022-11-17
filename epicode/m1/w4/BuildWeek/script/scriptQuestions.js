@@ -103,7 +103,7 @@ const questions = [
 
 
 
-
+mescola(questions);
 
 
 
@@ -247,6 +247,7 @@ document.querySelector('#question').innerText='';
       incorrectAnswer2.innerText = risposta[i].incorrect_answers[2]
       
       let array=[correctAnswer,incorrectAnswer0,incorrectAnswer1,incorrectAnswer2];
+      //mescolo l'array
       mescola(array);
       for(let domanda of array)
       contain.appendChild(domanda);
