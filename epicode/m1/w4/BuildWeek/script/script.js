@@ -105,9 +105,9 @@ const questions = [
 
 
 
-let giuste=0;//conta risposte giuste
-let sbagliate=0;
 
+
+let giuste=0;//conta risposte giuste
 let i=1;//Indice che permette di scorrere larray di domande e passare alla porssima
 
 //Script timer
@@ -133,14 +133,14 @@ function update(percent){
     $('#time').html(count);
       update(count);
     
-    if(count==0){
-      if(i==questions.length)
+    if(count==0){ //se il timer scade
+      if(i==questions.length) //se siamo all ultima domanda
       {
-        salva();
-        window.location.href="risultati.html"
+        salva(); //salvo in memoria in muero di risposte giuste
+        window.location.href="risultati.html"//mi sposto alla pagina successiva
       }
       else{
-        sbagliate++;//se il timer va a zero aggiungi una risposta sbagliata
+      
       i++;//passo alla prossima domanda
       count=20;//resetto il timer a 20 secondi
 
@@ -155,6 +155,11 @@ function update(percent){
     };
   }, 1000);
 //Fine script timer
+
+//Istruzioni necessarie a visualizzare la prima domanda
+nextQuestion(questions,i-1);
+nextAnswer(questions,i-1);
+counterQuest(questions,i);
 
 
   //Prende tutti i bottoni che ci sono attualmente nella pagina e gli aggiunge un eventListner per passare all domanda successiva
@@ -228,6 +233,7 @@ document.querySelector('#question').innerText='';
     //Caso in cui le domande sono a risposta multipla
     if(risposta[i].type=="multiple")
     {
+      
       let correctAnswer = document.createElement('button')
       correctAnswer.innerText = risposta[i].correct_answer
   
@@ -240,20 +246,14 @@ document.querySelector('#question').innerText='';
       let incorrectAnswer2 = document.createElement('button')
       incorrectAnswer2.innerText = risposta[i].incorrect_answers[2]
       
-      contain.appendChild(correctAnswer) 
-      contain.appendChild(incorrectAnswer0) 
-      contain.appendChild(incorrectAnswer1) 
-      contain.appendChild(incorrectAnswer2)
+      let array=[correctAnswer,incorrectAnswer0,incorrectAnswer1,incorrectAnswer2];
+      mescola(array);
+      for(let domanda of array)
+      contain.appendChild(domanda);
 
       
       //Aggiungo degli eventListner per tener traccia delle risposte giuste
-      let arr=[incorrectAnswer0,incorrectAnswer1,incorrectAnswer2];
-      for(let bottone of arr)
-      {
-        bottone.addEventListener("click",function(){
-          sbagliate++
-        })
-      }
+     
 
       correctAnswer.addEventListener("click",function(){
         giuste++;
@@ -273,19 +273,32 @@ document.querySelector('#question').innerText='';
         giuste++
         
       })
-      wrong.addEventListener("click",function(){
-        wrong++
-      })
+      
       listner();
 
   }
 
 }
 
-//Istruzioni necessarie a visualizzare la prima domanda
-nextQuestion(questions,i-1);
-nextAnswer(questions,i-1);
-counterQuest(questions,i);
+function mescola(array) {
+  //Ci prendiamo la lunghezza dell'array e partiamo dal fondo!
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  // Finché ci sono elementi da mescolare, iteriamo l'array
+  while (0 !== currentIndex) {
+    //Prendiamo un indice a caso dell'array, purché sia compreso tra 0 e la lunghezza dell'array
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    //Riduciamo di un'unità l'indice corrente
+    currentIndex -= 1;
+    // Una volta che abbiamo preso l'indice casuale, invertiamo l'elemento che stiamo analizzando alla posizione corrente (currentIndex) con quello alla posizione presa casualmente (randomIndex)
+    //Variabile temporanea
+    temporaryValue = array[currentIndex];
+    //Eseguiamo lo scambio
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+  //Torniamo l'array mescolato a fine ciclo
+  return array;
+}
 
 
 //Funzioned che ci permette di salvare la variabile contenente le risposte giuste nella memoria d'ambiente
@@ -297,4 +310,8 @@ function salva()
 
 //Setto musica di sottofondo
 var myMusic = document.querySelector("#music");
-	myMusic.volume = 3;
+	myMusic.volume = 0;
+
+  
+  let b=localStorage.getItem("difficult");
+  console.log("difficolta",b)

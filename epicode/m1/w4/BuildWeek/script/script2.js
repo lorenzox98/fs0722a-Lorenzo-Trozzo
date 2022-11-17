@@ -1,6 +1,4 @@
 
-let a=localStorage.getItem("risposteG");
-console.log(a)
 var ref=document.querySelector("#ref");
 var check=document.querySelector("#check");
 var button=document.querySelector("a");
@@ -14,9 +12,13 @@ button.addEventListener("click",()=>{
         p.innerText="Accept condition to start test"
         ref.appendChild(p);
         p.className="testi";
-        
-        
     }
     
+})
+let difficult=document.querySelector("#difficult")
+
+button.addEventListener("click",function(){
+    let va=difficult.options[difficult.selectedIndex].value;
+    localStorage.setItem("difficult",va);   
 })
 
