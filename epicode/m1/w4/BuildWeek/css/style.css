@@ -179,6 +179,9 @@ header{
   justify-content: center;
   text-align: center;
 }
+#question h1{
+  width: 60%;
+}
 
 #footP2{
     justify-content: center;
