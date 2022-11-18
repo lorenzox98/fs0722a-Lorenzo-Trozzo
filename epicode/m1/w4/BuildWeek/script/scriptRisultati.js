@@ -7,7 +7,7 @@ let correct=document.querySelectorAll(".result")
 console.log(correct)
 
 let count=document.createElement("p");
-count.innerText=giuste+"/"+lunghezza+ "Questions right";
+count.innerText=giuste+"/"+lunghezza+ " Questions right";
 count.style.textAlign="left";
 count.className="testi";
 let percent=document.createElement("p");
@@ -19,7 +19,7 @@ correct[0].appendChild(count);
 
 
 let countW=document.createElement("p");
-countW.innerText=sbagliate+"/"+lunghezza+ "Questions wrong";
+countW.innerText=sbagliate+"/"+lunghezza+ " Questions wrong";
 countW.style.textAlign="right";
 countW.className="testi";
 let percentW=document.createElement("p");
@@ -47,6 +47,7 @@ else{
 
 window.onload = function () {
 
+//chart ciambella
 var chart = new CanvasJS.Chart("chartContainer", {
     backgroundColor:"transparent",
 	animationEnabled: true,
@@ -77,8 +78,8 @@ chart.render();
 }
 
 
-
+	//href bottone
 	let button=document.querySelector("button");
 	button.addEventListener("click", function(){
-		window.location.href="index.html"
+		window.location.href="rate.html"
 	})

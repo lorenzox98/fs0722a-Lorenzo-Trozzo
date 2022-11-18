@@ -96,7 +96,18 @@ const questions = [
     correct_answer: "Java",
     incorrect_answers: ["Python", "C", "Jakarta"],
   },
-];
+
+{"category":"Science: Computers","type":"boolean","difficulty":"medium","question":"The common software-programming acronym I18N comes from the term Interlocalization.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"Which internet company began life as an online bookstore called 'Cadabra'?","correct_answer":"Amazon","incorrect_answers":["eBay","Overstock","Shopify"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"Moore's law originally stated that the number of transistors on a microprocessor chip would double every...","correct_answer":"Year","incorrect_answers":["Four Years","Two Years","Eight Years"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"While Apple was formed in California, in which western state was Microsoft founded?","correct_answer":"New Mexico","incorrect_answers":["Washington","Colorado","Arizona"]},{"category":"Science: Computers","type":"boolean","difficulty":"medium","question":"MacOS is based on Linux.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"In CSS, which of these values CANNOT be used with the position property?","correct_answer":"center","incorrect_answers":["static","absolute","relative"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"Which of the following is a personal computer made by the Japanese company Fujitsu?","correct_answer":"FM-7","incorrect_answers":["PC-9801","Xmillennium ","MSX"]},{"category":"Science: Computers","type":"boolean","difficulty":"medium","question":"It's not possible to format a write-protected DVD-R Hard Disk.","correct_answer":"True","incorrect_answers":["False"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"What was the first Android version specifically optimized for tablets?","correct_answer":"Honeycomb","incorrect_answers":["Eclair","Froyo","Marshmellow"]},{"category":"Science: Computers","type":"multiple","difficulty":"medium","question":"Unix Time is defined as the number of seconds that have elapsed since when?","correct_answer":"Midnight, January 1, 1970","incorrect_answers":["Midnight, July 4, 1976","Midnight on the creator of Unix's birthday","Midnight, July 4, 1980"]},
+
+{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"The Harvard architecture for micro-controllers added which additional bus?","correct_answer":"Instruction","incorrect_answers":["Address","Data","Control"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"How many Hz does the video standard PAL support?","correct_answer":"50","incorrect_answers":["59","60","25"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"The internet domain .fm is the country-code top-level domain for which Pacific Ocean island nation?","correct_answer":"Micronesia","incorrect_answers":["Fiji","Tuvalu","Marshall Islands"]},{"category":"Science: Computers","type":"boolean","difficulty":"hard","question":"DHCP stands for Dynamic Host Configuration Port.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"Which data structure does FILO apply to?","correct_answer":"Stack","incorrect_answers":["Queue","Heap","Tree"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"What does the International System of Quantities refer 1024 bytes as?","correct_answer":"Kibibyte","incorrect_answers":["Kylobyte","Kilobyte","Kelobyte"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"What was the first company to use the term Golden Master?","correct_answer":"Apple","incorrect_answers":["IBM","Microsoft","Google"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"Released in 2001, the first edition of Apple's Mac OS X operating system (version 10.0) was given what animal code name?","correct_answer":"Cheetah","incorrect_answers":["Puma","Tiger","Leopard"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"What is the codename of the eighth generation Intel Core micro-architecture launched in October 2017?","correct_answer":"Coffee Lake","incorrect_answers":["Sandy Bridge","Skylake","Broadwell"]},{"category":"Science: Computers","type":"multiple","difficulty":"hard","question":"Lenovo acquired IBM's personal computer division, including the ThinkPad line of laptops and tablets, in what year?","correct_answer":"2005","incorrect_answers":["1999","2002","2008"]}]
+
+
+
+
+
+
+
+
 
 
 //prendo dalla memoria d'ambiente la stringa con la difficoltà scelta su index
@@ -224,7 +235,7 @@ function nextQuestion(domanda,i){
 function counterQuest(arr,i){
     let foot=document.querySelector('#foot');
     foot.className='testi';
-    foot.innerText= 'Questions ' +[i ] + '/' + [arr.length];
+    foot.innerText= 'Question ' +[i ] + '/' + [arr.length];
 }
 //Funzione che ci permette di eliminare la domanda attuale per poi crearne una nuova
 function deleteQuestion(){
@@ -313,7 +324,6 @@ function mescola(array) {
 function salva()
 {
   localStorage.setItem("risposteG",giuste)
-
 }
 
 //Setto musica di sottofondo

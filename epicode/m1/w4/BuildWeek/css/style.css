@@ -41,7 +41,7 @@ body{
   h1{
     color: white;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.3rem;
     
     font-family: 'Outfit', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -63,17 +63,17 @@ footer{
     
 }
 footer button{
-    border-radius: 7%;
-    filter : brightness(150%);
-   
-    color: rgb(0, 0, 0);
-    background-color: #00ffff;
-    width: 250px;
-    height: 90px;
-    font-size: 2rem;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow: 0 0 50px #00ffff;
+  border: 0px;
+  filter : brightness(150%);
+
+  color: rgb(0, 0, 0);
+  background-color: #00ffff;
+  width: 250px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 50px #00ffff;
 }
 button:hover{
     opacity: 60%;
@@ -228,6 +228,3 @@ header{
 
 
 
-#container { 
-  
-} 
