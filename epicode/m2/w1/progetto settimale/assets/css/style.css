@@ -1,0 +1,289 @@
+body,html{
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+.hidden{
+    
+    border: 0;
+    background-color: transparent;
+    transform: scale(1);
+}
+@media screen and (max-width:700px){
+    .hidden{
+        display: none;
+    }
+    #emme{
+        
+        display: none;
+    }
+    
+}
+#emme{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+@media screen and (min-width:700px){
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-around;
+    }
+    li{
+        width: 45%;
+        margin: 0;
+        
+    } 
+}
+@media screen and (min-width:1200px){
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-around;
+    }
+    li{
+        width: 30%;
+        margin: 0;
+        
+    } #notizie
+    {
+        width: 60%;
+    }
+    #container{
+        float: right;
+        width: 40%;
+        margin-top: 1rem;
+    }
+    #matters h4{
+       
+        margin-right: 300px;
+    }
+    
+}
+
+h2{
+    font-family: 'Spectral', serif; 
+}
+main{
+    height: 100%;
+}
+h3{
+    font-weight: bold;
+}
+header{
+   position: relative;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    height: 15%;
+    background-color: #ffc017;
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#sign{
+    border: 0;
+    background-color: transparent;
+    transform: scale(1);
+    
+}
+#start{
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 4rem;
+    color: white;
+
+}
+section{
+    padding: 2rem;
+    height: 35%;
+    background-color: #ffc017;
+    border-bottom: black solid 2px;
+}
+h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+div p{
+    margin-bottom: 1.5rem;
+    
+    
+}
+div button{
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    border: 0;
+    color: white;
+    background-color: black;
+    border-radius: 4rem;
+}
+section div{
+    width: 70%;
+}
+article{
+    padding: 1rem;
+    border-bottom: black solid 2px;
+    
+}
+article svg{
+    float: left;
+}
+article h3{
+    font-size: 1rem;
+}
+#titolo{
+    display: flex;
+    align-items: center;
+}
+li{
+    position: relative;
+    width: 45%;
+    margin-bottom: 3rem;
+}
+ul{
+   
+    margin-left: 2.5rem;
+    list-style-type:none;
+   
+}
+li img{
+    
+    border-radius: 50%;
+    margin: 1rem;
+}
+li div{
+    
+
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+li h4{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+}
+li a{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+   
+    
+}
+li p
+{
+    font-size: 0.6rem;
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+}
+#min{
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    position: absolute;
+    right: 0;
+}
+#matters{
+    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-bottom: rgb(156, 154, 154) solid 2px;
+}
+.box{
+    border: solid 1px rgb(203, 197, 197);
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+#matters h4{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+#titoli{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px rgb(159, 158, 158) solid;
+}
+.box1{
+    color: grey;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+
+#notizie{
+    display: flex;
+    flex-direction: column;
+    
+}
+.notizia{
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.descrizione{
+    display: flex;
+    flex-direction: column;
+
+}
+.descrizione h2{
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.descrizione p{
+    margin: 0;
+    color: rgb(164, 161, 161);
+}
+.imm{
+    width: 30%;
+    margin-right: 3rem;
+}
+.nome{
+   
+    align-items: center;
+    display: flex;
+    
+   
+}
+.nome img{
+    border-radius: 50%;
+
+}
+.nome p{
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+.foot{
+    align-items: center;
+    width: 45%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    
+}
+.foot p{
+    transform: scale(0.6);
+}
+.icon{
+    padding: 0.3rem;
+    border-radius: 3rem;
+    background-color: rgb(216, 208, 208);
+}
