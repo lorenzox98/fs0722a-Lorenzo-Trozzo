@@ -1,0 +1,87 @@
+body {
+  background-color: #a6a6a6;
+  margin: 0;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#home {
+  text-align: center;
+  display: flex;
+  padding: 3rem;
+}
+#home div {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+#home h1 {
+  margin: 0;
+}
+#home img {
+  width: 80%;
+}
+#home #bottoni {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#home #bottoni #prodotti {
+  background-color: rgb(201, 86, 86);
+}
+#home #bottoni #prodotti:hover {
+  transform: scale(0.8);
+}
+#home #bottoni #accedi {
+  background-color: rgb(49, 70, 193);
+}
+#home #bottoni #accedi:hover {
+  transform: scale(0.8);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  align-items: center;
+  display: flex;
+  margin: 1rem;
+}
+
+nav {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 0.2rem black;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav button {
+  background-color: rgb(68, 68, 186);
+  width: 80%;
+  border: 0;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+nav img {
+  width: 20%;
+}
+
+.card img {
+  height: 15rem;
+}
+
+section {
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */

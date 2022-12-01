@@ -1,0 +1,231 @@
+#a ul, .navbar ul {
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+}
+
+#novita img {
+  width: 50%;
+}
+
+#contatti img, .navbar img {
+  box-shadow: 0 0 10px black;
+  border-radius: 50%;
+}
+
+.navbar ul button {
+  color: white;
+  font-family: monospace;
+  background-color: transparent;
+  border-radius: 2rem;
+}
+
+#contatti input {
+  box-shadow: 0 0 10px black;
+  background-color: rgb(90, 90, 198);
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border: solid 1px white;
+  outline: 1px solid rgb(90, 90, 198);
+}
+#contatti input:hover {
+  transform: scale(1.1);
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: rgb(244, 156, 116);
+}
+
+.navbar {
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: sienna;
+}
+.navbar img {
+  width: 5rem;
+  box-shadow: 0 0 10px black;
+}
+.navbar ul {
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+}
+@media screen and (max-width: 481px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .navbar ul button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: blue;
+    border: 1px solid white;
+    outline: 1px solid blue;
+    box-shadow: 0 0 10px blue;
+    color: white;
+  }
+  .navbar ul button:hover {
+    color: blue;
+    background: white;
+    box-shadow: none;
+  }
+}
+.navbar ul li {
+  margin-left: 1rem;
+}
+.navbar ul li:hover {
+  transform: scale(0.9);
+}
+
+#a {
+  margin-top: auto;
+  box-shadow: 0 0 10px black;
+  box-sizing: border-box;
+  float: right;
+  width: 20%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(25, 110, 222);
+}
+@media screen and (max-width: 481px) {
+  #a {
+    display: none;
+  }
+}
+#a ul {
+  font-size: 1.3rem;
+  padding-left: 0;
+}
+#a ul li {
+  margin-top: 2rem;
+}
+#a ul li:hover {
+  transform: scale(0.9);
+}
+#a ul li button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: sienna;
+  border: 1px solid white;
+  outline: 1px solid sienna;
+  box-shadow: 0 0 10px sienna;
+  color: white;
+  width: 80%;
+}
+#a ul li button:hover {
+  color: sienna;
+  background: white;
+  box-shadow: none;
+}
+
+#novita {
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+  text-align: center;
+}
+#novita img {
+  box-shadow: 0 0 10px black;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+#novita img:hover {
+  transform: scale(1.1);
+}
+#novita div {
+  float: left;
+  display: inline-block;
+  width: 80%;
+}
+@media screen and (max-width: 481px) {
+  #novita div {
+    width: 100%;
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: rgb(25, 110, 222);
+  padding: 1rem;
+  color: white;
+}
+
+#contatti {
+  text-align: center;
+}
+#contatti .testo {
+  height: 300px;
+}
+#contatti img {
+  margin-top: 2rem;
+}
+#contatti img:hover {
+  transform: scale(1.1);
+}
+
+.green {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  background-color: rgb(89, 230, 89);
+  border: 1px solid white;
+  outline: 1px solid rgb(89, 230, 89);
+  box-shadow: 0 0 10px rgb(89, 230, 89);
+  color: white;
+}
+.green:hover {
+  color: rgb(89, 230, 89);
+  background: white;
+  box-shadow: none;
+}
+
+.box {
+  width: 80%;
+  text-align: center;
+}
+
+.boxi {
+  justify-content: center;
+  justify-content: space-between;
+  display: flex;
+}
+.boxi img {
+  width: 33%;
+}/*# sourceMappingURL=style.css.map */

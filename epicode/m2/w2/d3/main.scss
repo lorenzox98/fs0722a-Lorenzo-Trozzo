@@ -1,0 +1,97 @@
+@import "variables";
+@import "button";
+body{
+    background-color: $colore-body;
+    margin: 0;
+    font: {
+
+        family: $font-body;
+        size: $font-size;
+    }
+    
+}
+h1{
+    font-size: $font-size-h1;
+}
+ #home{
+    text-align: center;
+    display: flex;
+    padding: 3rem;
+    div{
+        align-items: center;
+        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    h1{
+        margin: 0;
+    }
+    img{
+        width: 80%;
+    }
+    #bottoni{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        #prodotti{
+            
+            background-color: $button1-color;
+            &:hover{
+                transform: scale(0.8);
+            }
+            
+        }
+        #accedi{
+            
+            background-color: $button2-color;
+            &:hover{
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+ul{
+    
+    list-style-type: none;
+    display: flex;
+}
+li{
+    align-items: center;
+    display: flex;
+    margin: 1rem;
+
+}
+nav{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 0.2rem black;
+    padding: 0.5rem;
+    display: flex;
+    button{
+        background-color:rgb(68, 68, 186);
+        width: 80%;
+        border: 0;
+        border-radius: 1rem;
+        margin-right: 2rem;
+    }
+    justify-content: space-between;
+    img{
+        width: 20%;
+    }
+}
+.card{
+    img{
+        height: 15rem;
+    }
+}
+section{
+    margin-top: 2rem;
+}
+

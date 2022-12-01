@@ -1,0 +1,167 @@
+@import "variables";
+@import "query";
+@import "general";
+
+
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+body{
+    font-family: $body-font;
+    background-color: $body-color;
+}
+
+.navbar{
+    z-index: 1000;
+    top: 0;
+    img{
+        width: 5rem;
+        @extend %img;
+        box-shadow: 0 0 10px black;
+    }
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color:$nav-color ;
+    ul{
+        text-align: center;
+        @include devices(mobile){
+            flex-direction: column;
+            li{
+                margin-bottom: 0.5rem;
+            }
+        }
+        width: fit-content;
+        @extend%ul;
+        button{
+            
+            @extend %button;
+            @include devices(desktop){
+                @include baseButton(blue);
+                
+            }
+            
+            
+        }
+        
+        display: flex;
+        
+        li{
+            margin-left: 1rem;
+            &:hover{
+                transform: scale(0.9);
+                
+            }
+        }
+
+    }
+} 
+#a{
+    @include devices(mobile){
+        display: none;
+    }
+    margin-top: auto;
+    box-shadow: 0 0 10px black;
+    box-sizing: border-box;
+    float: right;
+    width: 20%;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: $aside-color;
+    
+    ul{
+        
+        font-size: $ul-font-size;
+        padding-left: 0;
+        @extend%ul;
+        li{
+            margin-top: 2rem;
+            &:hover{
+                transform: scale(0.9);
+            }
+            button{
+                @include baseButton(sienna);
+                width: 80%;
+                
+            }
+
+        }
+    }
+    
+}
+
+#novita{
+    
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    text-align: center;
+    img{
+        box-shadow: 0 0 10px black;
+        margin-top: 1rem;
+        @extend %imgGrande;
+        border-radius: 2rem;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    div{
+        @include devices(mobile){
+            width: 100%;
+        }
+        float: left;
+        display: inline-block;
+        width:80%
+        
+    }
+}
+
+footer{
+    margin-top: 2rem;
+    text-align: center;
+    background-color: $footer-bg;
+    padding: 1rem;
+    color: $footer-color;
+
+}
+
+#contatti{
+    input{
+        @extend%input;
+    }
+    .testo{
+        height: 300px;
+    }
+    text-align: center;
+    img{
+        
+        margin-top: 2rem;
+        
+        @extend%img;  
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.green{
+    @include baseButton(rgb(89, 230, 89));
+}
+.box{
+    width: 80%;
+    text-align: center;
+}
+.boxi{
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    img{
+        width: 33%;
+    }
+}

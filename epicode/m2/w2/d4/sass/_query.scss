@@ -1,0 +1,34 @@
+@mixin devices ($breakpoint){
+    
+    @if $breakpoint==mobile{
+        @media screen and (max-width:481px) {
+            @content;
+        }
+    }
+    @if $breakpoint==desktop{
+        @media screen and (min-width:800px) {
+            @content;
+        }
+    }
+    
+}
+
+@mixin baseButton($bgColor) {
+    
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: $bgColor;
+    border: 1px solid white;
+    outline: 1px solid $bgColor;
+    box-shadow: 0 0 10px $bgColor;
+    color: white;
+    &:hover {
+        color:$bgColor;
+        background:white;
+        box-shadow:none;
+    }
+    
+}

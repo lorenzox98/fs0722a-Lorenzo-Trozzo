@@ -14,17 +14,25 @@ let remove=document.querySelector("#remove")
 remove.addEventListener("click",function(){
    removeCards();
     console.log("ciao");
-    badge();
 })
 function badge(){
    let cards= document.querySelectorAll(".card");
    console.log(cards)
-   let hot=document.createElement("b");
-   hot.innerText="HOT";
-   hot.style.color="red";
+   
+   
    for(let carta of cards)
    {
+        let hot=document.createElement("b");
+        hot.innerText="HOTTTTT";
+        hot.style.color="red";
+        hot.style.marginLeft= "1rem";
         carta.appendChild(hot);
+        console.log(carta);
    }
 
 }
+let add=document.querySelector("#hot")
+add.addEventListener("click",function(){
+   badge();
+    console.log("ciao");
+})
