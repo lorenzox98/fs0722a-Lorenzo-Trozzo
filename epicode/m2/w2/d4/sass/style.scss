@@ -20,7 +20,7 @@ body{
     img{
         width: 5rem;
         @extend %img;
-        box-shadow: 0 0 10px black;
+        
     }
     
     display: flex;
@@ -97,7 +97,7 @@ body{
 }
 
 #novita{
-    
+    margin-bottom: 3rem;
     width: 100%;
     display: flex;
     margin-top: 1rem;
@@ -130,7 +130,7 @@ footer{
     color: $footer-color;
 
 }
-
+/*Page Contatti*/
 #contatti{
     input{
         @extend%input;
@@ -163,5 +163,6 @@ footer{
     display: flex;
     img{
         width: 33%;
+        @extend%img;
     }
 }

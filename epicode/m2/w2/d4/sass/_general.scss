@@ -8,7 +8,9 @@
 
 %img{
     box-shadow: 0 0 10px black;
-    
+    &:hover{
+        transform: scale(1.1);
+    }
     border-radius: 50%;
 }
 %button{

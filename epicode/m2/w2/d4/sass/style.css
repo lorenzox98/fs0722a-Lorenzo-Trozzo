@@ -7,9 +7,12 @@
   width: 50%;
 }
 
-#contatti img, .navbar img {
+.boxi img, #contatti img, .navbar img {
   box-shadow: 0 0 10px black;
   border-radius: 50%;
+}
+.boxi img:hover, #contatti img:hover, .navbar img:hover {
+  transform: scale(1.1);
 }
 
 .navbar ul button {
@@ -55,7 +58,6 @@ body {
 }
 .navbar img {
   width: 5rem;
-  box-shadow: 0 0 10px black;
 }
 .navbar ul {
   text-align: center;
@@ -151,6 +153,7 @@ body {
 }
 
 #novita {
+  margin-bottom: 3rem;
   width: 100%;
   display: flex;
   margin-top: 1rem;
@@ -183,6 +186,7 @@ footer {
   color: white;
 }
 
+/*Page Contatti*/
 #contatti {
   text-align: center;
 }
