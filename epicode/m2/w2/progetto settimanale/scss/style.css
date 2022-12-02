@@ -75,16 +75,16 @@ footer {
 .myC {
   position: relative;
   padding: 0;
-  background: url(../sfondo.svg);
+  background: url(../sfondo/sfondo.svg);
   background-repeat: no-repeat;
 }
 .myC .part {
-  background: url(../sfondo1.svg);
+  background: url(../sfondo/sfondo1.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .rec {
-  background-image: url(../sfondo3.svg);
+  background-image: url(../sfondo/sfondo3.svg);
   background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
