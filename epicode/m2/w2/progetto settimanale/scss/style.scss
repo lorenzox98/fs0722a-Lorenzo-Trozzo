@@ -8,8 +8,9 @@ body{
     font-family: $body-font;
 }
 .navbar{
-    padding: 0;
+    padding:0;
     .container-fluid{
+        padding: 1rem;
         background-color: $nav_bg;
         .bianco{
             color: $a-color;
@@ -20,6 +21,9 @@ body{
     }
     .navbar-brand{
         color: $a-color;
+    }
+    .collapse{
+        justify-content: flex-end;
     }
 }
 section{

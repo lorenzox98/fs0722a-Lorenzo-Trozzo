@@ -18,6 +18,7 @@ body {
   padding: 0;
 }
 .navbar .container-fluid {
+  padding: 1rem;
   background-color: #6600ff;
 }
 .navbar .container-fluid .bianco {
@@ -28,6 +29,9 @@ body {
 }
 .navbar .navbar-brand {
   color: white;
+}
+.navbar .collapse {
+  justify-content: flex-end;
 }
 
 section {
