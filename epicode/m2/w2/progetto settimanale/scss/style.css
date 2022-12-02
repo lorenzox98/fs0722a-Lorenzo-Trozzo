@@ -37,11 +37,6 @@ section {
   background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
   height: 400px;
 }
-@media screen and (max-width: 481px) {
-  section {
-    background-position-y: 0%;
-  }
-}
 section h3 {
   font-size: 2rem;
 }

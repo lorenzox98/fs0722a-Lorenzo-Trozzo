@@ -1,10 +1,10 @@
 @import "partials/variables";
-@import "partials/mixin.scss";
-@import "partials/query";
+@import "partials/mixin";
+@import "partials/function";
 
 
 body{
-    
+    @include colors;
     font-family: $body-font;
 }
 .navbar{
@@ -26,9 +26,7 @@ section{
     background-repeat: no-repeat;
    background-size: cover;
     background-position-y: 45%;
-    @include devices(mobile){
-        background-position-y:0%;
-    }
+   
     
     background-image:url(../img/pexels-aleksandar-pasaric-325185.jpg);
     height: 400px;
