@@ -7,8 +7,10 @@ let utenti=[
     {id: 6, nome: 'Sergio', cognome: 'Verdi', classe: 'A'},
     {id: 7, nome: 'Gianno', cognome: 'Bianchi', classe: 'A'},
     {id: 8, nome: 'Davide', cognome: 'Neri', classe: 'A'},
+    {id: 9, nome: 'Davide', cognome: 'Neri', classe: 'A'},
 ]
-    let posizioneAttuale;
+
+ let posizioneAttuale;
 class Paginazione{
     constructor(items,pageSize)
     {
@@ -44,10 +46,12 @@ class Paginazione{
 
     }
 }
-let table=document.querySelector("tbody");
 
-let pagina=new Paginazione(utenti,3);
+
+let table=document.querySelector("tbody");
+let pagina=new Paginazione(utenti,4);
 pagina.impagina(0);
+
 let ultimo=document.querySelector("#ultimo");
 ultimo.addEventListener("click",function(){
     deleteRiga(table);
