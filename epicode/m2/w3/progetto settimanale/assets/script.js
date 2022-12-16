@@ -9,7 +9,7 @@ async function loadJSON (url) {
     return await res.json();
   }
   
-  loadJSON('./json/users.JSON').then(data => {
+  loadJSON('./json/users.JSON').then(data => { 
     let k = 0
     let immagini=document.querySelectorAll(".img1");
     let array = document.querySelectorAll('.card-body')
@@ -59,6 +59,8 @@ async function loadJSON (url) {
     
     //fine creazione card
 
+
+    //check sesso
     if(controllaSesso()=="m")
     {
         img.setAttribute("src","img/male.png")
@@ -67,9 +69,13 @@ async function loadJSON (url) {
         img.setAttribute("src","img/female.png")
     }
 
+    //valori dei campi imput
     let inputNome=document.querySelector(".nome");
     let inputCognome=document.querySelector(".cognome");
     let inputEmail=document.querySelector(".email");
+
+
+    //creazione dei contenuti
     let nomeCompleto=document.createElement("p");
     nomeCompleto.innerText=inputNome.value+" "+ inputCognome.value;
     let email=document.createElement("p");
@@ -83,6 +89,8 @@ async function loadJSON (url) {
     contenitore.appendChild(div);
 
   }
+
+
 
   function controllaSesso(){
     let sesso=document.querySelector(".gender");
