@@ -111,6 +111,7 @@ section h2 {
   bottom: 0;
   padding-bottom: 20px;
   background-color: black;
+  z-index: 10000;
 }
 
 #sidebar2 {
@@ -162,6 +163,7 @@ article .card-body p {
 }
 
 footer {
+  z-index: 1000;
   background-color: #2c2c2c;
   max-width: 100%;
   position: fixed;
@@ -280,4 +282,35 @@ button {
 
 .nome-traccia {
   font-size: 0.8rem;
+}
+
+.headCerca {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 10vh;
+  margin: 0;
+}
+.headCerca div {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cerca {
+  margin-top: 50px;
+  color: black;
+}
+.cerca svg {
+  color: white;
+}
+
+.mainC {
+  padding-bottom: 10rem;
+}
+
+.contenitore {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
